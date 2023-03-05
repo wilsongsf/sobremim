@@ -1,0 +1,105 @@
+/* Estilos para telas grandes */
+body {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 90px; /* adicione um padding-top igual à altura do cabeçalho */
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 20px;
+  margin-top: 40px; /* reduza a margem superior para compensar o padding-top do body */
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #2c2c2c;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  scroll-margin-top: 90px; /* adicione um scroll-margin-top igual à altura do cabeçalho mais um espaço em branco */
+}
+
+ul li h3 a {
+  color: #00ff00;
+  text-decoration: none; /* remova a linha sublinhada do link */
+}
+
+section h2 {
+  color: #00ff00;
+}
+
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+section ul li h3 {
+  color: #00ff00;
+  margin-bottom: 5px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  section {
+    padding: 10px;
+    margin-top: 40px; /* reduza a margem superior para compensar o padding-top do body */
+    margin-bottom: 20px;
+    scroll-margin-top: 90px; /* adicione um scroll-margin-top igual à altura do cabeçalho mais um espaço em branco */
+  }
+}
